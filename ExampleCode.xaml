@@ -1,0 +1,236 @@
+﻿<Window x:Class="Prog122_L9_CheckBoxesAndRadioButtons.ExampleCode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prog122_L9_CheckBoxesAndRadioButtons"
+        mc:Ignorable="d"
+        Title="ExampleCode" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="109*" />
+            <RowDefinition
+                Height="79*" />
+            <RowDefinition
+                Height="76*" />
+            <RowDefinition
+                Height="170*" />
+        </Grid.RowDefinitions>
+
+        <!-- Part 1: Practice -->
+        <Canvas
+            Grid.Row="0"
+            Margin="0,0,0,6">
+            <Label
+                Content="Part 1 : Practice"
+                Canvas.Left="10"
+                Canvas.Top="10" />
+            <CheckBox
+                Name="CheckBox1"
+                Content="Option 1"
+                Canvas.Left="134"
+                Canvas.Top="24" />
+            <CheckBox
+                Name="CheckBox2"
+                Content="Option 2"
+                Canvas.Left="134"
+                Canvas.Top="54" />
+            <RadioButton
+                Name="RadioButton1"
+                Content="Option A"
+                GroupName="Options"
+                Canvas.Left="301"
+                Canvas.Top="27" />
+            <RadioButton
+                Name="RadioButton2"
+                Content="Option B"
+                GroupName="Options"
+                Canvas.Left="301"
+                Canvas.Top="57" />
+            <Button
+                Content="Check Status"
+                Click="CheckStatusButton_Click"
+                Canvas.Left="428"
+                Canvas.Top="42" />
+            <Label
+                Name="StatusLabel"
+                Content="Status will be shown here."
+                Canvas.Left="550"
+                Canvas.Top="34" />
+        </Canvas>
+
+        <!-- Part 2: Real World -->
+        <Canvas
+            Margin="0,109,0,8"
+            Grid.RowSpan="2">
+            <Label
+                Content="Part 2 : Real World"
+                Canvas.Left="10"
+                Canvas.Top="10" />
+            <TextBox
+                Name="OrderNameTextBox"
+                Canvas.Left="150"
+                Canvas.Top="10"
+                Width="100" />
+            <CheckBox
+                Name="IsOvernightCheckBox"
+                Content="Overnight Delivery"
+                Canvas.Left="260"
+                Canvas.Top="10" />
+            <CheckBox
+                Name="IsPerishableCheckBox"
+                Content="Perishable"
+                Canvas.Left="400"
+                Canvas.Top="10" />
+            <Button
+                Content="Create Order"
+                Click="CreateOrderButton_Click"
+                Canvas.Left="540"
+                Canvas.Top="10" />
+            <Label
+                Name="OrderLabel"
+                Content="Order details will be shown here."
+                Canvas.Left="650"
+                Canvas.Top="10" />
+        </Canvas>
+
+        <!-- Part 3: Change Theme -->
+        <Canvas
+            Grid.Row="1"
+            Margin="0,79,0,0"
+            Grid.RowSpan="2">
+            <Label
+                Content="Part 3 : Change Theme"
+                Canvas.Left="10"
+                Canvas.Top="10" />
+            <RadioButton
+                Name="ThemeButton1"
+                Content="Theme 1"
+                Click="ChangeTheme_Click"
+                Canvas.Left="27"
+                Canvas.Top="42" />
+            <RadioButton
+                Name="ThemeButton2"
+                Content="Theme 2"
+                Click="ChangeTheme_Click"
+                Canvas.Left="127"
+                Canvas.Top="42" />
+            <RadioButton
+                Name="ThemeButton3"
+                Content="Theme 3"
+                Click="ChangeTheme_Click"
+                Canvas.Left="227"
+                Canvas.Top="42" />
+            <RadioButton
+                Name="ThemeButton4"
+                Content="Theme 4"
+                Click="ChangeTheme_Click"
+                Canvas.Left="327"
+                Canvas.Top="42" />
+        </Canvas>
+
+        <!-- Part 4: Binary Converter -->
+        <Canvas
+            Grid.Row="3"
+            Margin="0,8,0,0">
+            <Label
+                Content="Part 4 : Binary Converter"
+                Canvas.Left="10"
+                Canvas.Top="10" />
+            <Label
+                Content="128"
+                Canvas.Left="150"
+                Canvas.Top="10" />
+            <Label
+                Content="64"
+                Canvas.Left="190"
+                Canvas.Top="10" />
+            <Label
+                Content="32"
+                Canvas.Left="230"
+                Canvas.Top="10" />
+            <Label
+                Content="16"
+                Canvas.Left="270"
+                Canvas.Top="10" />
+            <Label
+                Content="8"
+                Canvas.Left="310"
+                Canvas.Top="10" />
+            <Label
+                Content="4"
+                Canvas.Left="350"
+                Canvas.Top="10" />
+            <Label
+                Content="2"
+                Canvas.Left="390"
+                Canvas.Top="10" />
+            <Label
+                Content="1"
+                Canvas.Left="430"
+                Canvas.Top="10" />
+            <CheckBox
+                Name="Bit0"
+                Canvas.Left="150"
+                Canvas.Top="30" />
+            <CheckBox
+                Name="Bit1"
+                Canvas.Left="190"
+                Canvas.Top="30" />
+            <CheckBox
+                Name="Bit2"
+                Canvas.Left="230"
+                Canvas.Top="30" />
+            <CheckBox
+                Name="Bit3"
+                Canvas.Left="270"
+                Canvas.Top="30" />
+            <CheckBox
+                Name="Bit4"
+                Canvas.Left="310"
+                Canvas.Top="30" />
+            <CheckBox
+                Name="Bit5"
+                Canvas.Left="350"
+                Canvas.Top="30" />
+            <CheckBox
+                Name="Bit6"
+                Canvas.Left="390"
+                Canvas.Top="30" />
+            <CheckBox
+                Name="Bit7"
+                Canvas.Left="430"
+                Canvas.Top="30" />
+            <TextBox
+                Name="NumberInputTextBox"
+                Width="100"
+                Canvas.Left="470"
+                Canvas.Top="30" />
+            <Button
+                Content="Convert To Binary"
+                Click="ConvertToBinary_Click"
+                Canvas.Left="580"
+                Canvas.Top="30" />
+            <Button
+                Content="Convert From Binary"
+                Click="ConvertFromBinary_Click"
+                Canvas.Left="565"
+                Canvas.Top="66" />
+            <Label
+                Name="BinaryOutputLabel"
+                Content="Binary output will be shown here."
+                Canvas.Left="150"
+                Canvas.Top="48"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+            <Label
+                Name="DecimalOutputLabel"
+                Content="Decimal output will be shown here."
+                Canvas.Left="150"
+                Canvas.Top="74"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top" />
+        </Canvas>
+    </Grid>
+</Window>

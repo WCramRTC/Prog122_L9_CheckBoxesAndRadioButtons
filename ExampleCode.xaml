@@ -171,35 +171,35 @@
                 Canvas.Left="430"
                 Canvas.Top="10" />
             <CheckBox
-                Name="Bit0"
+                Name="Bit7"
                 Canvas.Left="150"
                 Canvas.Top="30" />
             <CheckBox
-                Name="Bit1"
+                Name="Bit6"
                 Canvas.Left="190"
                 Canvas.Top="30" />
             <CheckBox
-                Name="Bit2"
+                Name="Bit5"
                 Canvas.Left="230"
                 Canvas.Top="30" />
             <CheckBox
-                Name="Bit3"
+                Name="Bit4"
                 Canvas.Left="270"
                 Canvas.Top="30" />
             <CheckBox
-                Name="Bit4"
+                Name="Bit3"
                 Canvas.Left="310"
                 Canvas.Top="30" />
             <CheckBox
-                Name="Bit5"
+                Name="Bit2"
                 Canvas.Left="350"
                 Canvas.Top="30" />
             <CheckBox
-                Name="Bit6"
+                Name="Bit1"
                 Canvas.Left="390"
                 Canvas.Top="30" />
             <CheckBox
-                Name="Bit7"
+                Name="Bit0"
                 Canvas.Left="430"
                 Canvas.Top="30" />
             <TextBox

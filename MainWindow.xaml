@@ -9,11 +9,92 @@
     Title="MainWindow"
     Height="450"
     Width="800">
-    <Canvas>
-        <Button 
-            x:Name="btnOpenExample"
-            Content="Open Example"
-            Click="btnOpenExample_Click"
-            />
+    <Canvas
+        x:Name="canvasParent">
+        <Canvas
+            Height="125"
+            Width="800"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Background="#FFE2E2E2">
+            <Label
+                Content="Part 1"
+                Canvas.Left="10"
+                Canvas.Top="10" />
+            <Button
+                x:Name="btnPart1"
+                Content="Display State"
+                Canvas.Left="626"
+                Canvas.Top="48"
+                Height="28"
+                Width="114"
+                Click="btnPart1_Click" />
+            <Label
+                x:Name="lblDisplayInfo"
+                Content="Label"
+                Canvas.Left="381"
+                Canvas.Top="18" />
+            <CheckBox
+                x:Name="chkSausage"
+                Content="Sausage"
+                Canvas.Left="75"
+                Canvas.Top="47" />
+            <CheckBox
+                x:Name="chkPepperoni"
+                Content="Pepperoni"
+                Canvas.Left="75"
+                Canvas.Top="79" />
+            <GroupBox
+                Height="105"
+                Header="Pizza"
+                Width="108"
+                Canvas.Left="252"
+                Canvas.Top="14"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+                <StackPanel>
+                    <RadioButton
+                        x:Name="rbSmall"
+                        Content="Small"
+                        GroupName="grpPizzaSize"
+                        IsChecked="True" />
+                    <RadioButton
+                        x:Name="rbMedium"
+                        Content="Medium"
+                        GroupName="grpPizzaSize" />
+                    <RadioButton
+                        x:Name="rbLarge"
+                        Content="Large"
+                        GroupName="grpPizzaSize" />
+                </StackPanel>
+            </GroupBox>
+        </Canvas>
+        <GroupBox
+            Height="246"
+            Header="Themes"
+            Width="318"
+            Canvas.Left="45"
+            Canvas.Top="160">
+            <StackPanel>
+                <RadioButton
+                    x:Name="rbWhite"
+                    Content="White"
+                    IsChecked="True"
+                    Checked="ChangeTheme"/>
+                <RadioButton
+                    x:Name="rbBlack"
+                    Content="Black"
+                    Checked="ChangeTheme" />
+                <RadioButton
+                    x:Name="rbRed"            
+                    Content="Red"
+                    Checked="ChangeTheme" />
+                <RadioButton
+                    x:Name="rbBlue" 
+                    Content="Blue"
+                    Checked="ChangeTheme" />
+            </StackPanel>
+        </GroupBox>
+
     </Canvas>
 </Window>

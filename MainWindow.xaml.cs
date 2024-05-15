@@ -116,7 +116,13 @@ namespace Prog122_L9_CheckBoxesAndRadioButtons
             {
                 if(rb != null)
                 {
-                    string chosenColor = rb.Content.ToString();
+
+                    string chosenColor = "";
+
+                    if ((bool)rb.IsChecked)
+                    {
+                        chosenColor = rb.Content.ToString();
+                    }
 
                     if (chosenColor == "White")
                     {
